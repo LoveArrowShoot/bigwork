@@ -120,7 +120,6 @@ int Partition(int* a, int begin, int end) {
 }
 
 void CountSort(int* a, int size, int max) {
-	max++;
 	int *count = new int[max];
 	int *store= new int[size];
 	int i=0;
@@ -210,6 +209,7 @@ int findKbig(int* a, int size,int k) {
 }
 
 int findKsmall(int* a, int size,int k) {
+	k--;
 	int mid = Partition(a, 0, size - 1);
 	while (mid != k) {
 		if (mid > k) {
