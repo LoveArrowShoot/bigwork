@@ -113,8 +113,6 @@ int main() {
 			std::cout << std::endl;
 			break;
 		}
-
-
 		case 10: {
 			tree.BST_levelOrder(tree.root, visit);
 			break;
@@ -126,4 +124,5 @@ int main() {
 			break;
 		}
 	} while (n != 0);
+	return 0;
 }
